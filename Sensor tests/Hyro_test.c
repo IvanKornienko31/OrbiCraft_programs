@@ -10,7 +10,7 @@
 uint16_t hyro_number = 1;
 int16_t hyro_state[4];    // This array will contain state of AVS (in the hyro_state[0]) and data from AVS (in the other remaining elements of array).
 
-void control()
+void control()            // This is the main function in Orbicraft
 {
   hyro_turn_on(hyro_number);
   puts("Angular velosity sensor (AVS) was turned on.");

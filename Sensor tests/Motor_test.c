@@ -15,13 +15,13 @@ void control()            // This is the main function in Orbicraft
   motor_turn_on(motor_number);
   puts("Motor was turned on.");
   Sleep(1);
-  for (speed = -3000; speed <= 3000; speed += 500)
+  for (speed = -3000; speed <= 3000; speed += 500)          // For every iteration of the loop we increase speed.
   {
     if (!motor_set_speed(motor_number, speed, &motor_speed))  // If the engine has received a new speed successfully.
     {
       puts("Engaging the flywheel engine!");
       Sleep(5);
-      if (!motor_request_speed(motor_number, &motor_speed)) // If the engine speed data has been received successfully.
+      if (!motor_request_speed(motor_number, &motor_speed))   // If the engine speed data has been received successfully.
       {
         printf("The motor speed is %d", motor_speed);
       }
