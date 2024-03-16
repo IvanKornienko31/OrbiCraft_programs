@@ -1,6 +1,6 @@
 Языки: [Русский](#russian), [English](#english).
 
-## <a id = "#russian">О репозитории</a>
+## <a id="russian">О репозитории</a>
 
 Здесь размещены программы, которые были написаны для управления подсистемами из набора "ОрбиКрафт".
 
@@ -14,9 +14,9 @@
 
 Все программы написаны на языке C (Си).
 
-Версия репозитория: 1.0.
+Версия репозитория: 1.0.1. (Были исправлены ссылки в файле README.md)
 
-## <a id = "#english">About repository</a>
+## <a id="english">About repository</a>
 
 These are programms that were written to control subsystems from the "OrbiCraft" construction kit.
 
@@ -30,4 +30,4 @@ The repository includes:
 
 All programms were written in C.
 
-Repository version: 1.0.
+Repository version: 1.0.1. (Links in README.md file were fixed).
