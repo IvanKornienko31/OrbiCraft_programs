@@ -28,7 +28,7 @@ ___Все программы написаны на языке C (Си).___
     - Были исправлены ссылки в файле README.md.
 - **1.0.2. &ndash; текущая версия**.
     - Добавлен раздел "Версии репозитория" в каждый языковой отдел README-файла;
-    - Добавлена ссылка на документацию ОрбиКрафта;
+    - Добавлена ссылка на документацию "ОрбиКрафта";
     - Незначительные изменения комментариев в программах;
     - Исправлены грамматические и пунктуационные ошибки в README-файле;
     - Другие незначительные изменения в репозитории.
@@ -47,7 +47,7 @@ The repository includes:
 
 ___All programs were written in C.___
 
-OrbiCraft documentation (subsystem description and programs): <http://orbicraft.sputnix.ru/doku.php>
+"OrbiCraft" documentation (subsystem description and programs): <http://orbicraft.sputnix.ru/doku.php>
 
 The documentation contains a normal explanation of the work of the subsystems but in some places there is poorly written code and uncertainty in the explanation. Also, individual website pages and/or website navigation may not be displayed.
 
@@ -61,7 +61,7 @@ Current repository version: 1.0.2.
     - Links in README.md file were fixed.
 - **1.0.2. &ndash; current version**.
     - A section "Repository versions" was added in every language head of the README file;
-    - Added a link to the documentation of OrbiCraft;
+    - Added a link to the documentation of "OrbiCraft";
     - Minor changes to comments in programs;
     - Grammatical and punctuational errors have been corrected in the README file;
     - Other minor repository changes.
