@@ -1,6 +1,6 @@
 /*
   RUS: Это программа тестирования датчика угловой скорости (ДУС). ДУС содержится в составе конструктора "ОрбиКрафт".
-  ENG: This is an angular velosity sensor (AVS) testing programm. The AVS contains in "OrbiCraft" construction set.
+  ENG: This is an angular velosity sensor (AVS) testing program. The AVS contains in "OrbiCraft" construction set.
 */
 
 #include <stdio.h>
@@ -10,7 +10,7 @@
 uint16_t hyro_number = 1;
 int16_t hyro_state[4];    // This array will contain state of AVS (in the hyro_state[0]) and data from AVS (in the other remaining elements of array).
 
-void control()            // This is the main function in Orbicraft
+void control()            // This is the main function in program
 {
   hyro_turn_on(hyro_number);
   puts("Angular velosity sensor (AVS) was turned on.");

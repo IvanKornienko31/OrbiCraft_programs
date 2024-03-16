@@ -1,6 +1,6 @@
 /*
   RUS: Это программа тестирования двигателя-маховика. Двигатель маховик содержится в конструкторе "ОрбиКрафт".
-  ENG: This is a flywheel engine (in documentation reaction wheel) testing programm. The flywheel engine contains in "OrbiCraft" construction set.
+  ENG: This is a flywheel engine (in documentation reaction wheel) testing program. The flywheel engine contains in "OrbiCraft" construction set.
 */
 
 #include <stdio.h>
@@ -10,7 +10,7 @@
 const uint16_t motor_number = 1;
 int16_t motor_speed;
 
-void control()            // This is the main function in Orbicraft
+void control()            // This is the main function in program
 {
   motor_turn_on(motor_number);
   puts("Motor was turned on.");
