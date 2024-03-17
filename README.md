@@ -8,8 +8,8 @@
 
 Репозиторий включат в себя:
 
-- Заголовочный файл, содержащий все функции для работы с подсистемами (**[libschsat.h](https://github.com/IvanKornienko31/OrbiCraft_programms/blob/main/libschsat.h)**);
-- Программы, предназначенные для тестирования датчиков, мотора, камеры и радиопередатчиков;
+- Заголовочный файл, содержащий все функции для работы с подсистемами (**[libschsat.h](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/libschsat.h)**);
+- Программы, предназначенные для тестирования датчиков, двигателя, камеры и радиопередатчиков;
 - Программы, которые выполняют стабилизацию спутника, съемку окружающего пространства, ориентацию спутника и т. д.
 
 ___Все программы написаны на языке C (Си).___
@@ -18,7 +18,7 @@ ___Все программы написаны на языке C (Си).___
 
 В документации нормальное объяснение работы подсистем, но местами присутствует плохо написанный код и неопределённость в объяснении. Также могут не отображаться отдельные веб-страницы и/или навигация.
 
-Текущая версия репозитория: 1.0.2.
+Текущая версия репозитория: 1.1.
 
 ### Версии репозитория:
 
@@ -26,11 +26,17 @@ ___Все программы написаны на языке C (Си).___
     - Начальная версия репозитория.
 - 1.0.1.
     - Были исправлены ссылки в файле README.md.
-- **1.0.2. &ndash; текущая версия**.
+- 1.0.2.
     - Добавлен раздел "Версии репозитория" в каждый языковой отдел README-файла;
-    - Добавлена ссылка на документацию ОрбиКрафта;
+    - Добавлена ссылка на документацию "ОрбиКрафта";
     - Незначительные изменения комментариев в программах;
     - Исправлены грамматические и пунктуационные ошибки в README-файле;
+    - Другие незначительные изменения в репозитории.
+- **1.1. (текущая версия)**
+    - Добавлена программа тестирования магнитометра (**[Magn_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Magn_test.c)**);
+    - Был исправлен текст комментариев во всех существовавших ранее программах;
+    - Рабочий код всех существовавших ранее программ получил незначительные изменения;
+    - В программу тестирования двигателя добавлены новые комментарии;
     - Другие незначительные изменения в репозитории.
 
 ## <a id="english">(English) About the repository</a>
@@ -41,7 +47,7 @@ This construction kit is used to complete tasks in the "Space System Engineering
 
 The repository includes:
 
-- The header file that includes all the functions for working with subsystems (**[libschsat.h](https://github.com/IvanKornienko31/OrbiCraft_programms/blob/main/libschsat.h)**);
+- The header file that includes all the functions for working with subsystems (**[libschsat.h](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/libschsat.h)**);
 - Programs that are used to test sensors, engine, camera and transmitters;
 - Programs that executes satellite stabilization, survey of the surrounding space, satellite orientation and so on.
 
@@ -51,7 +57,7 @@ ___All programs were written in C.___
 
 The documentation contains a normal explanation of the work of the subsystems but in some places there is poorly written code and uncertainty in the explanation. Also, individual website pages and/or website navigation may not be displayed.
 
-Current repository version: 1.0.2.
+Current repository version: 1.1.
 
 ### Repository versions:
 
@@ -59,9 +65,15 @@ Current repository version: 1.0.2.
     - The initial version of the repository.
 - 1.0.1.
     - Links in README.md file were fixed.
-- **1.0.2. &ndash; current version**.
+- 1.0.2.
     - A section "Repository versions" was added in every language head of the README file;
     - Added a link to the documentation of "OrbiCraft";
     - Minor changes to comments in programs;
     - Grammatical and punctuational errors have been corrected in the README file;
+    - Other minor repository changes.
+- **1.1. (current version)**
+    - Added magnetometer testing program (**[Magn_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Magn_test.c)**);
+    - The text of the comments has been corrected in all pre-exsisting programs;
+    - The working code of all pre-exsisting programs has received minor changes;
+    - New comments have been added to the engine testing program;
     - Other minor repository changes.

@@ -1,5 +1,5 @@
 /*
-  RUS: Это программа тестирования двигателя-маховика. Двигатель маховик содержится в конструкторе "ОрбиКрафт".
+  РУС: Это программа тестирования двигателя-маховика. Двигатель-маховик содержится в конструкторе "ОрбиКрафт".
   ENG: This is a flywheel engine (in documentation reaction wheel) testing program. The flywheel engine contains in "OrbiCraft" construction set.
 */
 
@@ -9,37 +9,49 @@
 
 const uint16_t motor_number = 1;
 int16_t motor_speed;
+int motor_state[2];       // This array will contain engine states when we send the required speed to the engine (motor_state[0]) and when we request the engine speed (motor_state[1])
 
-void control()            // This is the main function in program
+void control()            // This is the main function in the program
 {
   motor_turn_on(motor_number);
-  puts("Motor was turned on.");
+  puts("Engine was turned on.");
   Sleep(1);
-  for (speed = -3000; speed <= 3000; speed += 500)          // For every iteration of the loop we increase speed.
+
+  // NOTICE: a minus in the engine speed value means that the satellite will rotate in the other direction.
+  for (speed = -3000; speed <= 3000; speed += 500)   // For every iteration of the loop we increase the speed. 
   {
-    if (!motor_set_speed(motor_number, speed, &motor_speed))  // If the engine has received a new speed successfully.
+    motor_state[0] = motor_set_speed(motor_number, speed, &motor_speed);
+    
+    if (!motor_state[0])  // If the engine has received a new speed successfully.
     {
-      puts("Engaging the flywheel engine!");
+      puts("Engaging the engine!");
       Sleep(5);
-      if (!motor_request_speed(motor_number, &motor_speed))   // If the engine speed data has been received successfully.
+      motor_state[1] = motor_request_speed(motor_number, &motor_speed)
+      if (!motor_state[1])  // If the engine speed data has been received successfully.
       {
-        printf("The motor speed is %d", motor_speed);
+        printf("The engine speed is %d.", motor_speed);
+      }
+      else                // If an engine speed reading error has occurred
+      {
+        puts("Engine speed reading error from the engine!");
       }
     }
-    else if (motor_set_speed(motor_number, speed, &motor_speed) == LSS_ERROR) // If errors occurred on the bus
+    else if (motor_state[0] == LSS_ERROR) // If errors occurred on the bus
     {
       puts("Error! Check your connection!");
       break;              // There is no reason for further execution because in further iterations we'll get the same error again
     }
-    else if (motor_set_speed(motor_number, speed, &motor_speed) == LSS_BREAK) // If AVS wasn't connected to the Power System.
+    else if (motor_state[0] == LSS_BREAK) // If engine wasn't connected to the Power System.
     {
-      puts("Error! Connect the AVS to Power System!");
+      puts("Error! Connect the engine to the Power System!");
       break;              // There is no reason for further execution because in further iterations we'll get the same error again
     }
+
     Sleep(1);
   }
+
   motor_set_speed(motor_number, 0, &motor_speed); // If you don't reset the engine speed, the engine will continue to work even after turning off.
   Sleep(1);
   motor_turn_off(motor_number);
-  puts("Motor was turned off.");
+  puts("Engine was turned off.");
 }
