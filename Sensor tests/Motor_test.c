@@ -5,13 +5,13 @@
 
 #include <stdio.h>
 #include <stdint.h>
-#include "libschsat.h"    // This is the OrbiCraft functions file. It is contained in this repository separately from the directories.
+#include "libschsat.h"      // This is the OrbiCraft functions file. It is contained in this repository separately from the directories.
 
 const uint16_t motor_number = 1;
 int16_t motor_speed;
-int motor_state[2];       // This array will contain engine states when we send the required speed to the engine (motor_state[0]) and when we request the engine speed (motor_state[1])
+int motor_state[2];         // This array will contain engine states when we send the required speed to the engine (motor_state[0]) and when we request the engine speed (motor_state[1]).
 
-void control()            // This is the main function in the program
+void control()              // This is the main function of the program.
 {
   motor_turn_on(motor_number);
   puts("Engine was turned on.");
@@ -22,29 +22,29 @@ void control()            // This is the main function in the program
   {
     motor_state[0] = motor_set_speed(motor_number, speed, &motor_speed);
     
-    if (!motor_state[0])  // If the engine has received a new speed successfully.
+    if (!motor_state[0])    // If the engine has received a new speed successfully.
     {
       puts("Engaging the engine!");
       Sleep(5);
-      motor_state[1] = motor_request_speed(motor_number, &motor_speed)
+      motor_state[1] = motor_request_speed(motor_number, &motor_speed);
       if (!motor_state[1])  // If the engine speed data has been received successfully.
       {
         printf("The engine speed is %d.", motor_speed);
       }
-      else                // If an engine speed reading error has occurred
+      else                  // If an engine speed reading error has occurred.
       {
-        puts("Engine speed reading error from the engine!");
+        puts("Engine speed reading error!");
       }
     }
-    else if (motor_state[0] == LSS_ERROR) // If errors occurred on the bus
+    else if (motor_state[0] == LSS_ERROR) // If errors occurred on the bus.
     {
       puts("Error! Check your connection!");
-      break;              // There is no reason for further execution because in further iterations we'll get the same error again
+      break;              // There is no reason for further execution because in further iterations we'll get the same error again.
     }
     else if (motor_state[0] == LSS_BREAK) // If engine wasn't connected to the Power System.
     {
       puts("Error! Connect the engine to the Power System!");
-      break;              // There is no reason for further execution because in further iterations we'll get the same error again
+      break;              // There is no reason for further execution because in further iterations we'll get the same error again.
     }
 
     Sleep(1);

@@ -18,7 +18,7 @@ ___Все программы написаны на языке C (Си).___
 
 В документации нормальное объяснение работы подсистем, но местами присутствует плохо написанный код и неопределённость в объяснении. Также могут не отображаться отдельные веб-страницы и/или навигация.
 
-Текущая версия репозитория: 1.1.
+Текущая версия репозитория: 1.2.
 
 ### Версии репозитория:
 
@@ -32,12 +32,16 @@ ___Все программы написаны на языке C (Си).___
     - Незначительные изменения комментариев в программах;
     - Исправлены грамматические и пунктуационные ошибки в README-файле;
     - Другие незначительные изменения в репозитории.
-- **1.1. (текущая версия)**
+- 1.1.
     - Добавлена программа тестирования магнитометра (**[Magn_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Magn_test.c)**);
     - Был исправлен текст комментариев во всех существовавших ранее программах;
     - Рабочий код всех существовавших ранее программ получил незначительные изменения;
     - В программу тестирования двигателя добавлены новые комментарии;
     - Другие незначительные изменения в репозитории.
+- **1.2. (текущая версия)**
+    - Добавлены программы тестирования одного и нескольких солнечных датчиков (**[Sun_sensor_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Sun_sensor_test.c)** и **[Some_sun_sensors.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors.c)**);
+    - Рабочий код всех существовавших ранее программ получил незначительные исправления;
+    - Был исправлен текст комментариев во всех существовавших ранее программах.
 
 ## <a id="english">(English) About the repository</a>
 
@@ -57,7 +61,7 @@ ___All programs were written in C.___
 
 The documentation contains a normal explanation of the work of the subsystems but in some places there is poorly written code and uncertainty in the explanation. Also, individual website pages and/or website navigation may not be displayed.
 
-Current repository version: 1.1.
+Current repository version: 1.2.
 
 ### Repository versions:
 
@@ -71,9 +75,13 @@ Current repository version: 1.1.
     - Minor changes to comments in programs;
     - Grammatical and punctuational errors have been corrected in the README file;
     - Other minor repository changes.
-- **1.1. (current version)**
+- 1.1.
     - Added magnetometer testing program (**[Magn_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Magn_test.c)**);
     - The text of the comments has been corrected in all pre-exsisting programs;
     - The working code of all pre-exsisting programs has received minor changes;
     - New comments have been added to the engine testing program;
     - Other minor repository changes.
+- **1.2. (current version)**
+    - Added testing programms for one and several solar sensors (**[Sun_sensor_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Sun_sensor_test.c)** and **[Some_sun_sensors.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors.c)**);
+    - The working code of all pre-exsisting programs has received minor fixes;
+    - The text of the comments has been corrected in all pre-exsisting programs.
