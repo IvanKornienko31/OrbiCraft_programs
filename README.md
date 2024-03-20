@@ -1,5 +1,7 @@
 Языки (Languages): [Русский](#russian), [English](#english).
 
+Текущая версия репозитория / Current repository version: 1.3.
+
 ## <a id="russian">(Русский) О репозитории</a>
 
 Здесь размещены программы, которые были написаны для управления подсистемами из набора "ОрбиКрафт".
@@ -17,8 +19,6 @@ ___Все программы написаны на языке C (Си).___
 Документация "ОрбиКрафта" (описание подсистем и программы): <http://orbicraft.sputnix.ru/doku.php>
 
 В документации нормальное объяснение работы подсистем, но местами присутствует плохо написанный код и неопределённость в объяснении. Также могут не отображаться отдельные веб-страницы и/или навигация.
-
-Текущая версия репозитория: 1.2.
 
 ### Версии репозитория:
 
@@ -38,10 +38,15 @@ ___Все программы написаны на языке C (Си).___
     - Рабочий код всех существовавших ранее программ получил незначительные изменения;
     - В программу тестирования двигателя добавлены новые комментарии;
     - Другие незначительные изменения в репозитории.
-- **1.2. (текущая версия)**
+- 1.2.
     - Добавлены программы тестирования одного и нескольких солнечных датчиков (**[Sun_sensor_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Sun_sensor_test.c)** и **[Some_sun_sensors.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors.c)**);
     - Рабочий код всех существовавших ранее программ получил незначительные исправления;
     - Был исправлен текст комментариев во всех существовавших ранее программах.
+- **1.3. (текущая версия)**
+    - Добавлена программа тестирования камеры и высокочастотного (ВЧ) передатчика (**[Camera_and_HF_radio.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Camera_and_HF_radio.c)**);
+    - Рабочий код всех существовавших ранее программ получил незначительные исправления;
+    - Был исправлен текст комментариев во всех существовавших ранее программах.
+    - Информация о текущей версии репозитория перенесена в начало README-файла.
 
 ## <a id="english">(English) About the repository</a>
 
@@ -61,8 +66,6 @@ ___All programs were written in C.___
 
 The documentation contains a normal explanation of the work of the subsystems but in some places there is poorly written code and uncertainty in the explanation. Also, individual website pages and/or website navigation may not be displayed.
 
-Current repository version: 1.2.
-
 ### Repository versions:
 
 - 1.0.
@@ -81,7 +84,12 @@ Current repository version: 1.2.
     - The working code of all pre-exsisting programs has received minor changes;
     - New comments have been added to the engine testing program;
     - Other minor repository changes.
-- **1.2. (current version)**
+- 1.2.
     - Added testing programms for one and several solar sensors (**[Sun_sensor_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Sun_sensor_test.c)** and **[Some_sun_sensors.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors.c)**);
     - The working code of all pre-exsisting programs has received minor fixes;
     - The text of the comments has been corrected in all pre-exsisting programs.
+- **1.3 (current version)**
+    - Added the program for testing camera and high frequency (HF) transmitter (**[Camera_and_HF_radio.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Camera_and_HF_radio.c)**);
+    - The working code of all pre-exsisting programs has received minor fixes;
+    - The text of the comments has been corrected in all pre-exsisting programs.
+    - Information about the current repository version has been moved to the beginning of the README file

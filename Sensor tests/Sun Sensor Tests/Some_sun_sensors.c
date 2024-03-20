@@ -1,6 +1,6 @@
 /*
   РУС: Это программа тестирования нескольких солнечных датчиков. Солнечные датчики содержатся в конструкторе "ОрбиКрафт".
-  ENG: This is a program for testing several solar sensors. The solar sensors contains in "OrbiCraft" construction set.
+  ENG: This is a program for testing several solar sensors. The solar sensors are contained in "OrbiCraft" construction set.
 */
 
 #include <stdio.h>
@@ -31,12 +31,12 @@ void control()                          // This is the main function of the prog
         puts("The data was received successfully!");
         printf("Data from solar sensor №%d #%d: value1 = %d, value2 = %d.\n", sun_sensor_number, i, sun_sensor_data[1], sun_sensor_data[2]);
       }
-      else if (sun_sensor_data[0] == LSS_ERROR)   // If errors occurred on the bus.
+      else if (sun_sensor_data[0] == LSS_ERROR)   // If error occurred on the bus.
       {
-        puts("Error! Check your connection!");
+        puts("Error! Check your connection of the solar sensors!");
         break;            // There is no reason for further execution because in further iterations we'll get the same error again.
       }
-      else if (sun_sensor_data[0] == LSS_BREAK)   // If solar sensor wasn't connected to the Power System.
+      else if (sun_sensor_data[0] == LSS_BREAK)   // If one of several solar sensors wasn't connected to the Power System.
       {
         printf("Error! Connect the solar sensor №%d to the Power System!\n", sun_sensor_number);
         break;            // There is no reason for further execution because in further iterations we'll get the same error again.

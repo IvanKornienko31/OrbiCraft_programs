@@ -25,9 +25,9 @@ void control()            // This is the main function of the program.
       puts("The data was received successfully!");
       printf("Data from AVS #%d: x = %d, y = %d, z = %d.\n", i, hyro_data[1], hyro_data[2], hyro_data[3]);
     }
-    else if (hyro_data[0] == LSS_ERROR)  // If errors occurred on the bus.
+    else if (hyro_data[0] == LSS_ERROR)  // If error occurred on the bus.
     {
-      puts("Error! Check your connection!");
+      puts("Error! Check your connection of the AVS!");
       break;              // There is no reason for further execution because in further iterations we'll get the same error again.
     }
     else if (hyro_data[0] == LSS_BREAK)  // If AVS wasn't connected to the Power System.

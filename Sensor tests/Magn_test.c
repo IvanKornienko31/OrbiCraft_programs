@@ -25,9 +25,9 @@ void control()            // This is the main function of the program.
       puts("The data was received successfully!");
       printf("Data from magnetometer #%d: x = %d, y = %d, z = %d.\n", i, magn_data[1], magn_data[2], magn_data[3]);
     }
-    else if (magn_data[0] == LSS_ERROR)   // If errors occurred on the bus.
+    else if (magn_data[0] == LSS_ERROR)   // If error occurred on the bus.
     {
-      puts("Error! Check your connection!");
+      puts("Error! Check your connection of magnetomerer!");
       break;              // There is no reason for further execution because in further iterations we'll get the same error again.
     }
     else if (magn_data[0] == LSS_BREAK)   // If magnetometer wasn't connected to the Power System.

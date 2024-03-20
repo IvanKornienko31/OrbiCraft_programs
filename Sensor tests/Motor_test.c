@@ -1,6 +1,6 @@
 /*
   РУС: Это программа тестирования двигателя-маховика. Двигатель-маховик содержится в конструкторе "ОрбиКрафт".
-  ENG: This is a flywheel engine (in documentation reaction wheel) testing program. The flywheel engine contains in "OrbiCraft" construction set.
+  ENG: This is a flywheel engine (in the documentation reaction wheel) testing program. The flywheel engine contains in "OrbiCraft" construction set.
 */
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ void control()              // This is the main function of the program.
   Sleep(1);
 
   // NOTICE: a minus in the engine speed value means that the satellite will rotate in the other direction.
-  for (speed = -3000; speed <= 3000; speed += 500)   // For every iteration of the loop we increase the speed. 
+  for (speed = -3000; speed <= 3000; speed += 500)   // For every iteration of the loop we increase the value of speed. 
   {
     motor_state[0] = motor_set_speed(motor_number, speed, &motor_speed);
     
@@ -36,9 +36,9 @@ void control()              // This is the main function of the program.
         puts("Engine speed reading error!");
       }
     }
-    else if (motor_state[0] == LSS_ERROR) // If errors occurred on the bus.
+    else if (motor_state[0] == LSS_ERROR) // If error occurred on the bus.
     {
-      puts("Error! Check your connection!");
+      puts("Error! Check your connection of engine!");
       break;              // There is no reason for further execution because in further iterations we'll get the same error again.
     }
     else if (motor_state[0] == LSS_BREAK) // If engine wasn't connected to the Power System.
