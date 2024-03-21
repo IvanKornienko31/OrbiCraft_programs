@@ -18,7 +18,7 @@ void control()              // This is the main function of the program.
   Sleep(1);
 
   // NOTICE: a minus in the engine speed value means that the satellite will rotate in the other direction.
-  for (speed = -3000; speed <= 3000; speed += 500)   // For every iteration of the loop we increase the value of speed. 
+  for (int16_t speed = -3000; speed <= 3000; speed += 500)   // For every iteration of the loop we increase the value of speed. 
   {
     motor_state[0] = motor_set_speed(motor_number, speed, &motor_speed);
     
@@ -27,6 +27,7 @@ void control()              // This is the main function of the program.
       puts("Engaging the engine!");
       Sleep(5);
       motor_state[1] = motor_request_speed(motor_number, &motor_speed);
+
       if (!motor_state[1])  // If the engine speed data has been received successfully.
       {
         printf("The engine speed is %d.", motor_speed);
@@ -35,6 +36,7 @@ void control()              // This is the main function of the program.
       {
         puts("Engine speed reading error!");
       }
+
     }
     else if (motor_state[0] == LSS_ERROR) // If error occurred on the bus.
     {
