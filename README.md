@@ -1,6 +1,6 @@
 Языки (Languages): [Русский](#russian), [English](#english).
 
-Текущая версия репозитория / Current repository version: 1.3.1.
+Текущая версия репозитория / Current repository version: 1.4.
 
 ## <a id="russian">(Русский) О репозитории</a>
 
@@ -47,7 +47,7 @@
     - Рабочий код всех существовавших ранее программ получил незначительные исправления;
     - Был исправлен текст комментариев во всех существовавших ранее программах;
     - Информация о текущей версии репозитория перенесена в начало README-файла.
-- **1.3.1. (текущая версия)**
+- 1.3.1.
     - **<a id = "ru-fixed-in-1.3.1.">Переименованы следующие программы:</a>**
         1. Camera_and_HF_radio.c  -->  **[Camera_and_HF_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Camera_and_HF_test.c)**;
         2. Some_sun_sensors.c  -->  **[Some_sun_sensors_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors_test.c)**;
@@ -55,6 +55,8 @@
     - В программе **Camera_and_HF_test.c** изменено сообщение при успешной отправке фотографии;
     - Изменено описание репозитория во всех языковых разделах;
     - Другие незначительные изменения в репозитории.
+- **1.4 (текущая версия)**
+    - Добавлена программа тестирования ультракоротковолнового (УКВ) передатчика (**[UHF_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/UHF_test.c)**). Это последняя программа тестирования, в дальнейшем будут появляться программы, необходимые для работы спутника;
 
 ## <a id="english">(English) About the repository</a>
 
@@ -101,7 +103,7 @@ In some places the documentation contains poorly written code for "OrbiCraft" su
     - The working code of all pre-exsisting programs has received minor fixes;
     - The text of the comments has been corrected in all pre-exsisting programs;
     - Information about the current repository version has been moved to the beginning of the README file.
-- **1.3.1 (current version)**
+- 1.3.1
     - **<a id = "en-fixed-in-1.3.1.">Renamed the following programs:</a>**
         1. Camera_and_HF_radio.c  -->  **[Camera_and_HF_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Camera_and_HF_test.c)**;
         2. Some_sun_sensors.c  -->  **[Some_sun_sensors_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/Sun%20Sensor%20Tests/Some_sun_sensors_test.c)**;
@@ -109,3 +111,5 @@ In some places the documentation contains poorly written code for "OrbiCraft" su
     - In the **Camera_and_HF_test.c** program the message on successful sending of photos has been changed;
     - Changed repository description in all language sections;
     - Other minor repository changes.
+- **1.4 (current version)**
+    - Added the program for testing ultra high frequency (UHF) transceiver (**[UHF_test.c](https://github.com/IvanKornienko31/OrbiCraft_programs/blob/main/Sensor%20tests/UHF_test.c)**). This is the last testing program, in the future the programs for the work of the satellite will appear.
